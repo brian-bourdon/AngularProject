@@ -1,8 +1,15 @@
+"use strict";
+exports.__esModule = true;
 var Pokemon = /** @class */ (function () {
-    function Pokemon(nom) {
-        this.nom = nom;
+    function Pokemon(name, hp, speed, attack) {
+        this.name = name;
+        this.hp = hp;
+        this.speed = speed;
+        this.attack = attack;
     }
+    Pokemon.prototype.attackPokemon = function (receiver) {
+        receiver.hp = receiver.hp - this.attack;
+    };
     return Pokemon;
 }());
-var test = new Pokemon("salameche");
-console.log(test);
+exports["default"] = Pokemon;

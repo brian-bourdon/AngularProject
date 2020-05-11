@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc src/pokemon.ts && node src/pokemon.js"
+    "test": "jest",
+    "tsc": "tsc src/fight.ts && node src/fight.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/brian-bourdon/AngularProject/issues"
   },
-  "homepage": "https://github.com/brian-bourdon/AngularProject#readme"
+  "homepage": "https://github.com/brian-bourdon/AngularProject#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^26.0.1",
+    "ts-jest": "^25.5.1",
+    "typescript": "^3.8.3"
+  }
 }
