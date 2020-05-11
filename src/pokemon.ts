@@ -1,5 +1,6 @@
 class Pokemon {
-  constructor(nom) {
+  private nom: string;
+  constructor(nom: string) {
     this.nom = nom;
   }
 }
